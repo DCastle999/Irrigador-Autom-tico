@@ -25,11 +25,11 @@ void loop() {
    delay(1); 
  } 
  sensorValue = sensorValue/100.0;
- if (sensorValue >= 1000){
-  Servo1.write(90); 
+ if (sensorValue >= 700){
+  Servo1.write(0); 
  }
  else
- Servo1.write(0);
+ Servo1.write(90);
  Serial.println(sensorValue); 
  delay(1000);
  
